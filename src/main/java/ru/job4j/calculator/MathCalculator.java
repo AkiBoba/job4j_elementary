@@ -9,10 +9,6 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
-    public static void main(String[] args) {
-        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-    }
-
     public static double sumfunc(double first, double second) {
         return sub(first, second) + div(first, second);
     }
@@ -20,5 +16,9 @@ public class MathCalculator {
     public static double subfunc(double first, double second) {
         return sub(first, second) + div(first, second) + sum(first, second)
                 + multiply(first, second);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
     }
 }
