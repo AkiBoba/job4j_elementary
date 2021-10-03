@@ -4,6 +4,5 @@ public class StudentInfo {
     public static void main(String[] args) {
         System.out.println("Vladimir Likhachev");
         System.out.println("11.05.1978");
-
     }
 }

@@ -8,17 +8,17 @@ import java.util.Arrays;
 public class Machine {
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
-        int[] rsl = new int[100];
+        int[] result = new int[100];
         int size = 0;
         int temp = money - price;
         if (money - price != 0) {
             for (int coin : coins) {
                 while (temp - coin >= 0) {
-                    rsl[size++] = coin;
+                    result[size++] = coin;
                     temp -= coin;
                 }
             }
         }
-        return Arrays.copyOf(rsl, size);
+        return Arrays.copyOf(result, size);
     }
 }
