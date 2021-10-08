@@ -14,20 +14,23 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax1To2Then3() {
+    public void whenMax1To3Then3() {
         int left = 3;
         int right = 1;
-        int result = Max.max(left, right);
+        int a = 2;
+        int result = Max.max(left, right, a);
         int expected = 3;
         Assert.assertEquals(result, expected);
     }
 
     @Test
-    public void whenMax0To2Then4() {
-        int left = 4;
+    public void whenMax0To8Then8() {
+        int left = 8;
         int right = 4;
-        int result = Max.max(left, right);
-        int expected = 4;
+        int a = 0;
+        int b = 6;
+        int result = Max.max(left, right, a, b);
+        int expected = 8;
         Assert.assertEquals(result, expected);
     }
 }
